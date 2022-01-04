@@ -1,0 +1,27 @@
+Zu dem Programm gehören die Quelltexte:
+
+main.c
+untersuche.c
+untersuche.h
+swap.h
+
+Zu der Windows-Version gehören zusätzlich die Dateien 
+
+search.c 
+serach.h
+
+Die Datei untersuche.c unterscheidet sich für beide Versionen, da die Funktion memmem in der Windows-Variante 
+nicht verfügbar ist.
+
+Das Programm wurde in der Sprache C auf einem Linux-Rechner entwickelt. Dort wird das Programm übersetzt mit
+
+gcc -o dirr main.c untersuche.c
+
+Ein makefile ist nicht enthalten, das ist bei diesem kleinen Programm auch nicht notwendig.
+
+Um das Programm unter Windows zu betreiben, ist zum Übersetzen die Cygwin-Umgebung notwendig. Dort gibt man 
+ein:
+
+$ gcc -o dirr.exe main.c untersuche.c search.c
+
+

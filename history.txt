@@ -1,0 +1,17 @@
+10.12.2021 Beginn der Arbeit an dem Programm
+
+23.12.2021 Fertigstellung der ersten Version
+
+03.01.2021
+
+gegenüber dem Archiv vom  
+23.12.21
+wurde in main.c folgendes gestrichen:
+
+ | FTW_CHDIR
+
+außerdem wurde eine Routine zum Byteswappen aus stackoverflow.com eingebunden, damit man byteswap.h 
+nicht einbinden muss, das nur in GNU-Umgebungen vorhanden ist.
+
+Außerdem wurde in der Windows-Variante von untersuche.c die GNU-Funktion memmem durch searchSimple() von
+Stephan Brumme ersetzt. In der Windows Laufzeitbibliothek ist memmem() nicht enthalten.

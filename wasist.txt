@@ -1,0 +1,49 @@
+dirr Programm zum Auffinden von jpg-Bildern auf einem lokalen Computer
+
+von sallomaeander
+
+1. Was tut das Programm?
+
+In dem aktuellen Fall von schwerem Kindesmissbrauch, mit dem das BKA in die Öffentlichkeitsfahndung gegangen ist, wird als Tatmittel nach einer Kamera Nikon D3300 mit der Seriennummer 6206059 gefahndet.
+
+Es handelt sich um eine digitale Spriegelreflexkamera, die ihre individuelle Seriennummer in den erstellten Bilddateien speichert; diese wird auch bei Nachbearbeitung der Bilder oft nicht gelöscht, sondern verbleibt in den so genannten Metadateien.
+
+Es ist nicht sicher, dass der Täter erster oder letzter Besitzer der Kamera war, ferner könnte die Kamera auch vom Täter oder anderen Personen für harmlose Zwecke verwendet worden sein und die Aufnahmen könnten dabei an andere Personen weitergegeben worden sein. 
+
+Das Programm durchsucht Datenträger nach JPEG-Bilddateien und schaut dabei nach den Metadaten und ob sich dort eventuell die gesuchte Seriennummer befindet.
+
+2. Wie macht es das?
+
+Das Programm wandert durch den Verzeichnisbaum und prüft bei alle vorhandenen Dateien, ob es sich um eine JPEG-Datei handelt und liest die Metadaten der Exif-Header aus. 
+
+3. Schreibt das Programm auf meine Festplatte?
+
+Nein, das Programm greift nur lesend auf den Datenträger zu, schreibt also auch nichts auf die Festplatte oder den USB-Stick.
+
+4. Hinterlässt das Programm Spuren auf meinem Rechner?
+
+Wie gesagt, das Programm selbst schreibt nicht auf den Rechner. Es ist aber denkbar, dass der Rechner aufgerufene Programme protokolliert (Befehlszeilen-History). Daher hat das Programm einen harmlosen Namen (dirr), der wie ein Tippfehler des Systemkommandos „dir“ aussieht. Außerdem macht das Programm keine Bildschirmausgaben, es sei denn, es wird eine Datei gefunden, die über die gesuchte Seriennummer verfügt.
+
+5. Warum tätigt das Programm keine Ausgaben?
+
+Je nach Situation, in der nach Bilddateien gesucht wird, kann eine unauffällige Vorgehensweise sinnvoll sein. Nur im Falle eines Fundes wird die Datei mit ihrem Pfad am Bildschirm angezeigt.
+
+6. Wie kann ich testen, ob das Programm überhaupt funktioniert?
+
+Im Paket ist eine Testdatei namens ‘testbild.jpg’ enthalten. Diese ist mit der gesuchten Seriennummer präpariert, hat aber nur eine geringe Größe, so dass sie nicht mit einem echten Fund verwechselt werden kann. Außerdem ist das Bild rot und enthält das Wort ‘test’.
+
+6. Wie soll ich mich verhalten, wenn das Programm einen Fund meldet?
+
+Bitte handeln Sie besonnen. Es wurde große Sorgfalt darauf gelegt, falsche Funde (false positives) zu vermeiden, indem die Struktur der Dateien genau analysiert wird. Sollte trotzdem ein Fund angezeigt werden, sollten Sie sich an eine Polizeidienststelle wenden oder sich von einem Anwalt beraten lassen. Seien Sie sich bitte dessen bewusst, dass der bloße Besitz kinderpornografischer Bilder strafbar ist. Handelt es sich „nur“ um ein harmloses Bild mit der gesuchten Seriennummer, sollten Sie den Fund direkt bei der Polizei melden.
+
+Bedenken Sie bitte, dass der ehemalige oder heutige Besitzer der Kamera nicht der Täter sein muss! Hüten Sie sich vor falschen Verdächtigungen oder eigenmächtigen Maßnahmen. Für die Strafverfolgung ist die Polizei zuständig.
+
+7. Was kann ich mit dem Quelltext anfangen?
+
+Der Quelltext liegt bei, damit Fachleute die Unbedenklichkeit des Programms prüfen und selbst Verbesserungen vornehmen können. Das Programm ist in der Public Domain bzw. gemeinfrei. In einer separaten Anleitung erkläre ich interessierten Benutzern die Verwendung. Verwendete Routinen anderer Entwickler sind 
+entsprechend gekennzeichnet.
+
+8. Was ist geplant?
+
+Eventuell wird das Programm noch mit einem grafischen Frontend (Mausbedienung, automatische Installation usw.) versehen. Vielleicht hat auch ein Dritter 
+Lust, auf Grundlage meiner Quelltexte so etwas zu schreiben und der Gemeinschaft zur Verfügung zu stellen.

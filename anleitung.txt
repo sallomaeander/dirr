@@ -1,0 +1,29 @@
+Bitte kopieren sie dirr.exe und unbedingt auch die cygwion1.dll in ein Verzeichnis ihrer Wahl.
+z.B. in das Bildverzeichnis oder auf einen Speicherstick. 
+
+Unter Windows 10 öffnen Sie mit Windows + R den Ausführen-Dialog und geben dort
+'cmd' (ohne die Anführungszeichen) ein. Es öffnet sich ein Konsolenfenster. Dort 
+navigieren sie in das Verzeichnis, wohin sie die beiden Dateien kopiert haben.
+
+Geben Sie beispielsweise ein: cd \Users\Benutzername\Dokumente
+
+Wenn Sie dirr ohne weitere Parameter eingeben, durchsucht das Programm das aktuelle
+und alle darunter liegenden Verzeichnisse.
+
+Wenn Ihr Speicherstick den Laufwerksbuchstaben D: hat, durchucht dirr D:\ den 
+kompletten Stick.
+
+Wenn Sie Ihre Bilder in C:\Users\Dokumente haben, durchsucht dirr C:\Users\Dokumente
+das entsprechende Verzeichnis und alle darunter liegenden Verzeichnisse.
+
+Das Programm läuft ohne Bildschirmausgabe; nur bei Fund einer Bilddatei mit der 
+Seriennummer der Tat-Kamera zeigt das Programm den Fund mit Pfad an. 
+
+Unter Linux ist zu beachten, dass, anders als bei Windows, das aktuelle Verzeichnis
+üblicherweise nicht im Suchpfad ist. In einer Konsole unter Linux würde man 
+daher z.B. eingeben:
+
+./dirr /home/username/Bilder
+
+Es ist also wichtig, den Punkt und den Backslash voranzustellen, damit das Programm
+gestartet wird.
